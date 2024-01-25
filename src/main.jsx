@@ -27,18 +27,18 @@ const router = createBrowserRouter([
         element: <Index />
       },
       {
-        path: "contacts/:contactId",
+        path: "/react-router-contact-app/contacts/:contactId",
         element: <Contact />,
         loader: contactLoader
       },
       {
-        path: "contacts/:contactId/edit",
+        path: "/react-router-contact-app/contacts/:contactId/edit",
         element: <EditContact />,
         loader: contactLoader,
         action: editAction
       },
       {
-        path: "contacts/:contactId/destroy",
+        path: "/react-router-contact-app/contacts/:contactId/destroy",
         action: destroyAction,
         errorElement: <div>Oops! There was an error.</div>,
       }

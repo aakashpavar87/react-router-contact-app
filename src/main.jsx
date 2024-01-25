@@ -16,7 +16,7 @@ import { action as destroyAction} from './routes/destroy'
 import Index from './routes'
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/react-router-contact-app/",
     element: <Root />,
     errorElement: <ErrorPage />,
     loader: rootLoader,
